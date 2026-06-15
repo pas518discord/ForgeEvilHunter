@@ -1,0 +1,29 @@
+[
+  {
+    "event_type": "SESSION_START",
+    "case_name": "test_case",
+    "agent_version": "1.0.0",
+    "timestamp": "2026-06-15T09:27:58.347777",
+    "confidence_threshold": 0.7
+  },
+  {
+    "log_id": "TOOL-0000-1781490478347",
+    "event_type": "TOOL_EXECUTION",
+    "timestamp": "2026-06-15T09:27:58.347799",
+    "iteration": 0,
+    "tool": "vol3_pslist",
+    "command": "vol3 ...",
+    "args": {
+      "memory_path": "mem.raw"
+    },
+    "success": true,
+    "duration_sec": 1.2,
+    "output_hash": "17b20d2d773208e111e36e405d4cda64e99455e600c9eab258e5843238ebddab",
+    "output_preview": "PID Name\n1234 svchost.exe",
+    "truncated": false,
+    "error": "",
+    "confidence": 0.85,
+    "confidence_reasoning": "clear process list",
+    "finding_type": "CONFIRMED"
+  }
+]

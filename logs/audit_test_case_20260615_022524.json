@@ -1,0 +1,55 @@
+[
+  {
+    "event_type": "SESSION_START",
+    "case_name": "test_case",
+    "agent_version": "1.0.0",
+    "timestamp": "2026-06-15T02:25:24.725216",
+    "confidence_threshold": 0.7
+  },
+  {
+    "event_type": "INVESTIGATION_START",
+    "timestamp": "2026-06-15T02:25:24.725236",
+    "goal": "find malware",
+    "evidence": {
+      "memory": "mem.raw",
+      "disk": null
+    }
+  },
+  {
+    "log_id": "TOOL-0001-1781465124725",
+    "event_type": "TOOL_EXECUTION",
+    "timestamp": "2026-06-15T02:25:24.725281",
+    "iteration": 1,
+    "tool": "vol3_pslist",
+    "command": "vol3 -f mem.raw windows.pslist.PsList",
+    "args": {
+      "memory_path": "mem.raw"
+    },
+    "success": true,
+    "duration_sec": 1.2,
+    "output_hash": "7e17ee633d740d573d0393ca0148c2ed3210b178d484afaf5d81eab1c3d1215c",
+    "output_preview": "PID 1234",
+    "truncated": false,
+    "error": "",
+    "confidence": 0.85,
+    "confidence_reasoning": "Clear process list",
+    "finding_type": "CONFIRMED"
+  },
+  {
+    "event_type": "FINDING_RECORDED",
+    "timestamp": "2026-06-15T02:25:24.725367",
+    "references_log_id": "TOOL-0001-1781465124725",
+    "claim": "Suspicious process found",
+    "confidence": 0.85,
+    "finding_type": "CONFIRMED"
+  },
+  {
+    "event_type": "INVESTIGATION_END",
+    "timestamp": "2026-06-15T02:25:24.725374",
+    "summary": {
+      "total_findings": 1,
+      "total_self_corrections": 0,
+      "log_entries": 4
+    }
+  }
+]
