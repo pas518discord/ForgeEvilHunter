@@ -1,0 +1,8 @@
+.env
+evidence/
+logs/*.json
+__pycache__/
+*.pyc
+*.E01
+*.raw
+*.7z
